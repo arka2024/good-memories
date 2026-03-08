@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Women's Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8c8c8;
+      font-family: 'Playfair Display', serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background-color: #f8c8c8;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      padding: 40px 30px 50px;
+      position: relative;
+    }
+
+    /* ---------- SVG ILLUSTRATION ---------- */
+    .illustration {
+      width: 340px;
+      height: 360px;
+      margin: 0 auto 10px;
+      background: transparent;
+    }
+
+    .illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    .illustration svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ---------- TEXT ---------- */
+    .international {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 1.15rem;
+      letter-spacing: 0.45em;
+      color: #8b1a2b;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .womens {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 4.8rem;
+      color: #8b1a2b;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .day-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: -4px;
+    }
+
+    .heart {
+      color: #8b1a2b;
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    .day {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 4.8rem;
+      color: #8b1a2b;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* ---------- BUTTON ---------- */
+    .cta-btn {
+      display: inline-block;
+      margin-top: 36px;
+      padding: 14px 48px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #fff;
+      background-color: #8b1a2b;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0 4px 18px rgba(139, 26, 43, 0.35);
+    }
+
+    .cta-btn:hover {
+      background-color: #a62240;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(139, 26, 43, 0.45);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 520px) {
+      .womens, .day {
+        font-size: 3rem;
+      }
+      .international {
+        font-size: 0.85rem;
+      }
+      .illustration {
+        width: 200px;
+        height: 230px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- Women's Day icon -->
+    <div class="illustration">
+      <img src="front-icon.png" alt="International Women's Day" />
+      <!-- SVG removed, using actual image instead -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 520" style="display:none;">
+
+        <!-- ===== WOMAN FACE SILHOUETTE (right-facing profile) ===== -->
+        <path d="
+          M 310 95
+          C 305 80, 290 60, 270 55
+          C 255 52, 245 58, 240 70
+          C 235 80, 238 95, 240 108
+          C 242 120, 240 135, 235 148
+          C 230 160, 228 170, 232 180
+          C 236 190, 245 196, 252 205
+          C 260 215, 264 228, 260 242
+          C 256 256, 248 265, 242 275
+          C 236 285, 234 298, 238 310
+          C 242 322, 252 330, 265 338
+          C 275 345, 282 340, 290 328
+          C 298 316, 305 298, 310 280
+          C 315 262, 320 245, 322 230
+          C 324 215, 322 200, 325 188
+          C 328 176, 335 165, 340 152
+          C 345 138, 342 120, 332 108
+          C 322 96, 315 95, 310 95
+          Z
+        " fill="#8b1a2b"/>
+
+        <!-- Nose bridge & nose -->
+        <path d="
+          M 340 152
+          C 348 146, 360 140, 370 138
+          C 378 136, 382 140, 378 146
+          C 374 152, 364 156, 356 160
+        " fill="#8b1a2b"/>
+
+        <!-- Upper lip -->
+        <path d="
+          M 356 160
+          C 350 164, 348 170, 354 174
+          C 360 178, 370 178, 374 174
+          C 378 170, 374 164, 368 162
+        " fill="#8b1a2b"/>
+
+        <!-- Lower lip -->
+        <path d="
+          M 354 174
+          C 350 180, 352 186, 360 188
+          C 368 190, 374 186, 374 180
+          C 374 176, 370 174, 366 174
+        " fill="#8b1a2b"/>
+
+        <!-- Chin connection -->
+        <path d="
+          M 360 188
+          C 356 196, 348 210, 340 220
+          C 332 230, 324 236, 322 230
+        " fill="#8b1a2b"/>
+
+        <!-- Neck & shoulder -->
+        <path d="
+          M 290 328
+          C 295 340, 298 355, 296 370
+          C 294 385, 290 400, 288 420
+          C 286 440, 290 460, 295 480
+          L 260 480
+          C 262 460, 258 440, 255 420
+          C 252 400, 250 380, 248 365
+          C 246 350, 248 340, 252 332
+          C 256 326, 262 335, 265 338
+        " fill="#8b1a2b"/>
+
+        <!-- Ear -->
+        <circle cx="286" cy="305" r="6" fill="#8b1a2b"/>
+
+        <!-- Hoop earring -->
+        <circle cx="290" cy="322" r="14" fill="none" stroke="#8b1a2b" stroke-width="5"/>
+        <circle cx="286" cy="310" r="5" fill="#8b1a2b"/>
+
+        <!-- ===== LARGE DAISY FLOWERS ===== -->
+
+        <!-- Daisy 1 – top center (large) -->
+        <g transform="translate(230, 72)">
+          <circle cx="0" cy="0" r="8" fill="none" stroke="#8b1a2b" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="3" fill="#8b1a2b"/>
+          <circle cx="5" cy="0" r="1.5" fill="#8b1a2b" opacity="0.6"/>
+          <circle cx="-5" cy="0" r="1.5" fill="#8b1a2b" opacity="0.6"/>
+          <circle cx="0" cy="5" r="1.5" fill="#8b1a2b" opacity="0.6"/>
+          <circle cx="0" cy="-5" r="1.5" fill="#8b1a2b" opacity="0.6"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-20" rx="5" ry="12" fill="none" stroke="#8b1a2b" stroke-width="1.4" transform="rotate(330)"/>
+        </g>
+
+        <!-- Daisy 2 – upper right (large) -->
+        <g transform="translate(290, 48)">
+          <circle cx="0" cy="0" r="7" fill="none" stroke="#8b1a2b" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="2.5" fill="#8b1a2b"/>
+          <circle cx="4" cy="0" r="1.2" fill="#8b1a2b" opacity="0.6"/>
+          <circle cx="-4" cy="0" r="1.2" fill="#8b1a2b" opacity="0.6"/>
+          <circle cx="0" cy="4" r="1.2" fill="#8b1a2b" opacity="0.6"/>
+          <circle cx="0" cy="-4" r="1.2" fill="#8b1a2b" opacity="0.6"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-18" rx="4.5" ry="11" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(330)"/>
+        </g>
+
+        <!-- Daisy 3 – left side (large) -->
+        <g transform="translate(160, 145)">
+          <circle cx="0" cy="0" r="9" fill="none" stroke="#8b1a2b" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="3.5" fill="#8b1a2b"/>
+          <circle cx="5.5" cy="0" r="1.5" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="-5.5" cy="0" r="1.5" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="0" cy="5.5" r="1.5" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="0" cy="-5.5" r="1.5" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="4" cy="4" r="1.2" fill="#8b1a2b" opacity="0.4"/>
+          <circle cx="-4" cy="-4" r="1.2" fill="#8b1a2b" opacity="0.4"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="13" fill="none" stroke="#8b1a2b" stroke-width="1.5" transform="rotate(330)"/>
+        </g>
+
+        <!-- Daisy 4 – bottom-left (medium) -->
+        <g transform="translate(170, 240)">
+          <circle cx="0" cy="0" r="7" fill="none" stroke="#8b1a2b" stroke-width="1.4"/>
+          <circle cx="0" cy="0" r="2.5" fill="#8b1a2b"/>
+          <circle cx="4" cy="0" r="1.2" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="-4" cy="0" r="1.2" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="0" cy="4" r="1.2" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="0" cy="-4" r="1.2" fill="#8b1a2b" opacity="0.5"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-17" rx="4.5" ry="10" fill="none" stroke="#8b1a2b" stroke-width="1.3" transform="rotate(330)"/>
+        </g>
+
+        <!-- Daisy 5 – mid-center (medium) -->
+        <g transform="translate(210, 158)">
+          <circle cx="0" cy="0" r="6" fill="none" stroke="#8b1a2b" stroke-width="1.3"/>
+          <circle cx="0" cy="0" r="2" fill="#8b1a2b"/>
+          <circle cx="3.5" cy="0" r="1" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="-3.5" cy="0" r="1" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="0" cy="3.5" r="1" fill="#8b1a2b" opacity="0.5"/>
+          <circle cx="0" cy="-3.5" r="1" fill="#8b1a2b" opacity="0.5"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(30)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(150)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(210)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(300)"/>
+          <ellipse cx="0" cy="-15" rx="4" ry="9" fill="none" stroke="#8b1a2b" stroke-width="1.2" transform="rotate(330)"/>
+        </g>
+
+        <!-- Daisy 6 – small, upper left -->
+        <g transform="translate(170, 55)">
+          <circle cx="0" cy="0" r="5" fill="none" stroke="#8b1a2b" stroke-width="1.2"/>
+          <circle cx="0" cy="0" r="2" fill="#8b1a2b"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(36)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(72)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(108)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(144)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(216)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(252)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(288)"/>
+          <ellipse cx="0" cy="-13" rx="3.5" ry="8" fill="none" stroke="#8b1a2b" stroke-width="1.1" transform="rotate(324)"/>
+        </g>
+
+        <!-- ===== DETAILED LEAVES WITH VEIN LINES ===== -->
+
+        <!-- Leaf 1 – large, upper-right, striped -->
+        <g transform="translate(320, 62) rotate(45)">
+          <path d="M 0 0 Q 14 -22, 0 -44 Q -14 -22, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.6"/>
+          <line x1="0" y1="-4" x2="0" y2="-42" stroke="#8b1a2b" stroke-width="0.8"/>
+          <line x1="-3" y1="-8" x2="6" y2="-14" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-5" y1="-14" x2="7" y2="-20" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-6" y1="-20" x2="7" y2="-26" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-5" y1="-26" x2="6" y2="-32" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-3" y1="-32" x2="4" y2="-38" stroke="#8b1a2b" stroke-width="0.6"/>
+        </g>
+
+        <!-- Leaf 2 – large, far left, striped -->
+        <g transform="translate(110, 165) rotate(-55)">
+          <path d="M 0 0 Q 15 -24, 0 -48 Q -15 -24, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.6"/>
+          <line x1="0" y1="-4" x2="0" y2="-46" stroke="#8b1a2b" stroke-width="0.8"/>
+          <line x1="-4" y1="-8" x2="7" y2="-14" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-6" y1="-14" x2="8" y2="-22" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-7" y1="-22" x2="8" y2="-28" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-6" y1="-28" x2="7" y2="-34" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-4" y1="-34" x2="5" y2="-40" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-2" y1="-40" x2="3" y2="-44" stroke="#8b1a2b" stroke-width="0.6"/>
+        </g>
+
+        <!-- Leaf 3 – upper left, filled dark -->
+        <g transform="translate(185, 22) rotate(-20)">
+          <path d="M 0 0 Q 10 -16, 0 -32 Q -10 -16, 0 0 Z" fill="#8b1a2b" opacity="0.75"/>
+        </g>
+
+        <!-- Leaf 4 – top right, striped outline -->
+        <g transform="translate(305, 28) rotate(30)">
+          <path d="M 0 0 Q 10 -16, 0 -32 Q -10 -16, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.4"/>
+          <line x1="0" y1="-4" x2="0" y2="-30" stroke="#8b1a2b" stroke-width="0.7"/>
+          <line x1="-3" y1="-8" x2="5" y2="-12" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-5" y1="-13" x2="5" y2="-18" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-4" y1="-19" x2="5" y2="-24" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-3" y1="-25" x2="3" y2="-28" stroke="#8b1a2b" stroke-width="0.5"/>
+        </g>
+
+        <!-- Leaf 5 – left side, filled dark -->
+        <g transform="translate(138, 85) rotate(-40)">
+          <path d="M 0 0 Q 8 -13, 0 -26 Q -8 -13, 0 0 Z" fill="#8b1a2b" opacity="0.7"/>
+        </g>
+
+        <!-- Leaf 6 – bottom left, large striped -->
+        <g transform="translate(130, 260) rotate(-35)">
+          <path d="M 0 0 Q 12 -20, 0 -40 Q -12 -20, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.5"/>
+          <line x1="0" y1="-4" x2="0" y2="-38" stroke="#8b1a2b" stroke-width="0.7"/>
+          <line x1="-4" y1="-8" x2="5" y2="-14" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-5" y1="-14" x2="6" y2="-20" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-6" y1="-20" x2="6" y2="-26" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-5" y1="-26" x2="5" y2="-32" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-3" y1="-32" x2="3" y2="-36" stroke="#8b1a2b" stroke-width="0.5"/>
+        </g>
+
+        <!-- Leaf 7 – small filled, top -->
+        <g transform="translate(260, 25) rotate(55)">
+          <path d="M 0 0 Q 7 -11, 0 -22 Q -7 -11, 0 0 Z" fill="#8b1a2b" opacity="0.65"/>
+        </g>
+
+        <!-- Leaf 8 – mid-right, striped -->
+        <g transform="translate(310, 130) rotate(50)">
+          <path d="M 0 0 Q 9 -14, 0 -28 Q -9 -14, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.3"/>
+          <line x1="0" y1="-3" x2="0" y2="-26" stroke="#8b1a2b" stroke-width="0.7"/>
+          <line x1="-3" y1="-6" x2="4" y2="-10" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-4" y1="-12" x2="5" y2="-16" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-4" y1="-17" x2="4" y2="-22" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-2" y1="-23" x2="3" y2="-26" stroke="#8b1a2b" stroke-width="0.5"/>
+        </g>
+
+        <!-- Leaf 9 – small, lower-left -->
+        <g transform="translate(145, 305) rotate(-25)">
+          <path d="M 0 0 Q 8 -12, 0 -24 Q -8 -12, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.2"/>
+          <line x1="0" y1="-3" x2="0" y2="-22" stroke="#8b1a2b" stroke-width="0.6"/>
+          <line x1="-3" y1="-6" x2="4" y2="-10" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-4" y1="-12" x2="4" y2="-16" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-3" y1="-17" x2="3" y2="-21" stroke="#8b1a2b" stroke-width="0.5"/>
+        </g>
+
+        <!-- Leaf 10 – filled, near right -->
+        <g transform="translate(335, 90) rotate(65)">
+          <path d="M 0 0 Q 6 -10, 0 -20 Q -6 -10, 0 0 Z" fill="#8b1a2b" opacity="0.6"/>
+        </g>
+
+        <!-- Leaf 11 – striped, behind head left -->
+        <g transform="translate(155, 200) rotate(-65)">
+          <path d="M 0 0 Q 10 -16, 0 -32 Q -10 -16, 0 0 Z" fill="none" stroke="#8b1a2b" stroke-width="1.3"/>
+          <line x1="0" y1="-3" x2="0" y2="-30" stroke="#8b1a2b" stroke-width="0.7"/>
+          <line x1="-3" y1="-7" x2="5" y2="-12" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-5" y1="-13" x2="6" y2="-18" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-5" y1="-19" x2="5" y2="-24" stroke="#8b1a2b" stroke-width="0.5"/>
+          <line x1="-3" y1="-25" x2="3" y2="-29" stroke="#8b1a2b" stroke-width="0.5"/>
+        </g>
+
+      </svg>
+    </div>
+
+    <!-- Text -->
+    <p class="international">International</p>
+    <p class="womens">Women's</p>
+    <div class="day-line">
+      <span class="heart">&#9829;</span>
+      <span class="day">Day</span>
+      <span class="heart">&#9829;</span>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="tribute.html" class="cta-btn">Celebrate &rarr;</a>
+  </div>
+</body>
+</html>
